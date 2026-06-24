@@ -1,0 +1,34 @@
+# =============================================================================
+# requirements.txt  –  AMD DirectML Edition
+# =============================================================================
+# Install with:  pip install -r requirements.txt
+# =============================================================================
+
+# ── ONNX Runtime (AMD GPU via DirectML) ──────────────────────────────────────
+# This replaces torch at *runtime*.  Keep torch only for the one-time export.
+onnxruntime-directml>=1.17.0
+
+# ── Computer vision ──────────────────────────────────────────────────────────
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# ── Screen capture (BetterCam – install separately via git, see SETUP.md) ──
+# pip install git+https://github.com/RootKit-Org/BetterCam.git
+
+# ── GUI overlay ──────────────────────────────────────────────────────────────
+PyQt5>=5.15.0
+
+# ── Input / system ───────────────────────────────────────────────────────────
+pynput>=1.7.6
+pywin32>=306
+pygame>=2.5.0          # optional: controller support
+
+# ── Misc ─────────────────────────────────────────────────────────────────────
+termcolor>=2.3.0
+
+# =============================================================================
+# ONE-TIME MODEL EXPORT (can uninstall torch after running export_model.py)
+# =============================================================================
+# torch>=2.0.0
+# torchvision>=0.15.0
+# =============================================================================
